@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>Holywood</title>
+        <link href="/css/main.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+    </head>
+	<body>
+        <header>
+            <div class="header-wrap">
+                <a href="#" class="logo"><img src="/assets/img/logo.png" width="240" height="auto" alt="" /></a>
+                <nav>
+                    <ul>
+                        <li><a href="/events/">Events</a></li>
+                        <li><a href="/biography/">Biography</a></li>
+                        <li><a href="/discography/">Discography</a></li>
+                        <li><a href="/fanclub/">Fan Club</a></li>
+                    </ul>
+                </nav>
+                <a class="login" href="#">ログイン</a>
+            </div>
+        </header>
+
+        <div class="covervid-wrapper">
+            <div class="cover"></div>
+            <video class="covervid-video" autoplay loop muted poster="img/video-fallback.png">
+                <source src="/assets/video/bg.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <section class="audio">
+            <div id="waveform"></div>
+            <div class="art-work">
+                <img src="/assets/img/artwork.gif" width="" height=""  alt="" />
+                <div class="art-work-right">
+                    <p class="prefix">3rd Single</p>
+                    <img class="art-work-title" src="/assets/img/artwork-title.png" widht="" height="" alt="" />
+                    <p class="art-work-description">「決して実現しない目標でも、それがあることによって前進できることに価値がある」という想いが込められた、HoLYWooDの3rd Single。</p>
+                    <div class="banner-wrapper">
+                        <div class="col">
+                            <div class="art-work-play">
+                                <button id="audio-button" class="btn btn-primary" onclick="wavesurfer.playPause()">
+                                    <a class='playBut'>
+                                        <svg version="1.1"
+                                             xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+                                             x="0px" y="0px" width="213.7px" height="213.7px" viewBox="0 0 213.7 213.7" enable-background="new 0 0 213.7 213.7" xml:space="preserve">
+                                            <polygon class='triangle' id="XMLID_18_" fill="none" fill-opacity="0.5" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+                                            73.5,62.5 148.5,105.8 73.5,149.1 "/>
+                                            <circle class='circle' id="XMLID_17_" fill="none" fill-opacity="0.5" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="106.8" cy="106.8" r="103.3"/>
+                                        </svg>
+                                    </a>
+                                </button>
+                                <p>視聴する</p>
+                            </div>
+
+                        </div>
+                        <div class="col">
+                            <a href="#"><img src="/assets/img/itunes-banner.png" alt="" /></a>
+                        </div>
+                        <div class="col">
+                            <a href="#"><img src="/assets/img/spotify-banner.png" alt="" /></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <ul class="top-social">
+                <li><a href="/" target="_blank"><img src="/assets/img/twitter.svg" width="40" height=""alt="" /></a></li>
+                <li><a href="/" target="_blank"><img src="/assets/img/facebook.svg" width="20" height="" alt="" /></a></li>
+                <li><a href="/" target="_blank"><img src="/assets/img/instagram.svg" width="40" height=""alt="" /></a></li>
+                <li><a href="/" target="_blank"><img src="/assets/img/youtube.svg" width="40" height="" alt="" /></a></li>
+            </ul>
+        </section>
+
+        <script type="text/javascript" src="/js/j.js"></script>
+        <script type="text/javascript" src="/js/bg.js"></script>
+        <script type="text/javascript" src="/js/ws.js"></script>
+        <script type="text/javascript" src="/js/main.js"></script>
+        <script type="text/javascript">
+            $('.covervid-video').coverVid(1920, 1080);
+        </script>
+    </body>
+</html>
